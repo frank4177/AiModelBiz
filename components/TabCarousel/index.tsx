@@ -226,7 +226,7 @@ const TabCardCarousel: React.FC = () => {
               }}
             >
               <div className="flex flex-col-reverse lg:flex-row pl-4 sm:pl-5 md:pl-6 pt-4 sm:pt-5 md:pt-6 pb-4 md:pb-0">
-                <div className="w-full pr-0 md:pr-6 flex flex-col justify-center mt-3 md:mt-0 mb-0 md:mb-0">
+                <div className="flex-1 pr-0 md:pr-6 flex flex-col justify-center mt-3 md:mt-0 mb-0 md:mb-0">
                   <PullUpAnimation delay={1} yOffset={30} isActive={positionIndex === 0}>
                   <h3 className="text-base sm:text-lg md:text-[20px] text-[#828282] font-[600] mb-1 sm:mb-2">
                     {tab.label}
@@ -245,7 +245,7 @@ const TabCardCarousel: React.FC = () => {
                     Learn More
                   </button>
                 </div>
-                <div className="relative h-[180px] sm:h-[220px] md:h-[300px] lg:h-[514px] w-full sm:w-[320px] md:w-[420px] lg:w-[520px] rounded-tl-lg sm:rounded-tl-xl md:rounded-tl-2xl rounded-br-lg sm:rounded-br-xl md:rounded-br-2xl overflow-hidden">
+                <div className="relative  h-[180px] sm:h-[220px] md:h-[300px] bg-red-500 lg:h-[514px] sm:w-[320px] md:w-[420px] lg:w-[520px] rounded-tl-lg sm:rounded-tl-xl md:rounded-tl-2xl rounded-br-lg sm:rounded-br-xl md:rounded-br-2xl overflow-hidden">
                   <video
                     ref={(el) => {
                       videoRefs.current[tab.id] = el;
