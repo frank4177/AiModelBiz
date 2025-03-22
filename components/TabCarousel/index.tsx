@@ -131,7 +131,7 @@ const TabCardCarousel: React.FC = () => {
   return (
     <div
       className={`w-full overflow-hidden bg-white ${
-        isSmallMobile ? "min-h-[80vh]" : "min-h-[100vh]"
+        isSmallMobile ? "min-h-[70vh]" : "min-h-[100vh]"
       }`}
     >
       {/* Tab Navigation */}
@@ -225,15 +225,15 @@ const TabCardCarousel: React.FC = () => {
                 mass: 1.2   
               }}
             >
-              <div className="flex flex-col-reverse md:flex-row pl-4 sm:pl-5 md:pl-6 pt-4 sm:pt-5 md:pt-6 pb-4 md:pb-0">
-                <div className="w-full md:w-1/2 pr-0 md:pr-6 flex flex-col justify-center mt-3 md:mt-0 mb-0 md:mb-0">
+              <div className="flex flex-col-reverse lg:flex-row pl-4 sm:pl-5 md:pl-6 pt-4 sm:pt-5 md:pt-6 pb-4 md:pb-0">
+                <div className="w-full pr-0 md:pr-6 flex flex-col justify-center mt-3 md:mt-0 mb-0 md:mb-0">
                   <PullUpAnimation delay={1} yOffset={30} isActive={positionIndex === 0}>
                   <h3 className="text-base sm:text-lg md:text-[20px] text-[#828282] font-[600] mb-1 sm:mb-2">
                     {tab.label}
                   </h3>
                   </PullUpAnimation>
                   <PullUpAnimation delay={1} yOffset={30} isActive={positionIndex === 0}>
-                    <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-[42px] font-bold mb-3 md:mb-4 text-[#22263F] leading-tight">
+                    <h2 className="text-2xl sm:text-3xl md:text-[25px] lg:text-[42px] font-bold mb-3 md:mb-4 text-[#22263F] leading-tight">
                       {tab.title}
                     </h2>
                   </PullUpAnimation>

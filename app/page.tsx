@@ -13,7 +13,7 @@ const figtree = Figtree({
 
 const Home: FC = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white overflow-hidden">
       <div className="relative w-full bg-[#04142B] ">
         <div
           className={`absolute -bottom-[400px] md:-bottom-[800px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] md:w-[1000px] md:h-[800px] rounded-full bg-[#0037FF] opacity-30 blur-3xl`}
