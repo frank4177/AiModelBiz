@@ -245,7 +245,7 @@ const TabCardCarousel: React.FC = () => {
                     Learn More
                   </button>
                 </div>
-                <div className="relative  h-[180px] sm:h-[220px] md:h-[300px] bg-red-500 lg:h-[514px] sm:w-[320px] md:w-[420px] lg:w-[520px] rounded-tl-lg sm:rounded-tl-xl md:rounded-tl-2xl rounded-br-lg sm:rounded-br-xl md:rounded-br-2xl overflow-hidden">
+                <div className="relative  h-[180px] sm:h-[220px] md:h-[300px] lg:h-[514px] sm:w-[320px] md:w-[420px] lg:w-[520px] rounded-tl-lg sm:rounded-tl-xl md:rounded-tl-2xl rounded-br-lg sm:rounded-br-xl md:rounded-br-2xl overflow-hidden">
                   <video
                     ref={(el) => {
                       videoRefs.current[tab.id] = el;
