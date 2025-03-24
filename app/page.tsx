@@ -4,6 +4,7 @@ import CompanyMarquee from "@/components/CompanyMarquee";
 import TabCardCarousel from "@/components/TabCarousel";
 import Header from "@/components/Header";
 import HeroSection from "@/components/Hero";
+import Image from "next/image";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -14,12 +15,20 @@ const figtree = Figtree({
 const Home: FC = () => {
   return (
     <div className=" bg-white overflow-hidden">
-      <div className="relative w-full bg-[#04142B] ">
-        <div
-          className={`absolute -bottom-[400px] md:-bottom-[800px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] md:w-[1000px] md:h-[800px] rounded-full bg-[#0037FF] opacity-30 blur-3xl`}
-        ></div>
-        <Header />
-        <HeroSection font={figtree} />
+      <div className="relative w-full min-h-screen px-[5%]">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/aiwkhero.png"
+            alt=""
+            fill
+            style={{ objectFit: "cover" }}
+            priority
+          />
+        </div>
+        <div className="relative z-10">
+          <Header />
+          <HeroSection font={figtree} />
+        </div>
       </div>
 
       <div className="relative z-10">
